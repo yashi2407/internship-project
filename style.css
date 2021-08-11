@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+input[type=text] {
+    border-radius: 4px!important;
+    border-right-color: #ddd!important;
+    border: 2px solid #ddd;
+}
+input[type=date] {
+    border-radius: 4px!important;
+    border: 2px solid #ddd;
+    border-right-color: #ddd!important;
+}
+.nav-link.active{
+    color: coral;
+}
+.flex-items{
+    display: flex;
+    flex-direction: row;
+}
+.bg-light{
+    background: white!important;
+}
+.text-green{
+    color: #06af61!important;
+}
+.green{
+    display: block!important;
+    float: left!important;
+   
+    width: 40px!important;
+    height: 40px!important;
+    padding:2rem;
+    border-radius: 4px!important;
+    color: #fff!important;
+    
+    text-align: center!important;
+    
+    background-color: #06af61!important;
+}
+
+
+.btn_orange{
+  background: #ff8e01;
+  border: #ff8e01 1px solid;
+  border-radius: 10%;
+  color: white;
+}
+
+a.navbar-brand {
+    color: blue!important;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: 380px;
+
+}
+a.nav-link{
+    color: black!important;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 19px 0 39px;
+    background: transparent;
+}
+li.nav-item a.nav-link:hover{
+    color: coral!important;
+}
+li.nav-item.active a{
+    color: coral!important;
+}
+/*search-container*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.search-container{
+    background: url("https://worldbudgettravel.com/wp-content/uploads/2020/06/hong-kong-12.jpg")no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    -webkit-animation:zoom 5s infinite;
+    animation:zoom 5s infinite;
+ 
+}
+.search-container2{
+    background: url("https://worldbudgettravel.com/wp-content/uploads/2017/11/hotel-by-the-sea.jpg")no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:80vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.search-container3{
+    
+    background:url("https://worldbudgettravel.com/wp-content/uploads/2017/11/flight-at-sunset.jpg")no-repeat center center fixed;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:80vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+.search-container4{
+    background:url("https://worldbudgettravel.com/wp-content/uploads/2017/11/rentalbg1.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:80vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+.search-container5{
+    
+    background:url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80")no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:50vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+div.col-6.active-icon{
+    background: white!important;
+    border: gray 1px solid;
+}
+
+
+@-webkit-keyframes zoom{
+    0%,100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:125%;
+    }
+}
+@keyframes zoom{
+    0%, 100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:125%;
+    }
+}
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Style the form icons */
+  .icon {
+    padding: 10px;
+   background: hsla(0, 0%, 100%, 0.918);
+    color: black;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  /* Style the input fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+.input-field:focus {
+    border: 2px solid #ff8e01!important;
+  }
+.form-container{
+    background: hsla(0, 0%, 100%, 0.918);
+    height:330px;
+    opacity: 0.9;
+    text-align: center;
+    
+    top: 40%;
+    width: 65%;
+    height: 60%;
+    
+}
+input[type="date"]::before{
+    color: #ffffff;
+    content: attr(placeholder) ": ";
+ }
+ input[type="date"]:focus::before {
+    content: "" !important;
+ }
+ul .d-flex .justify-content-start{
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.navbar2 {
+    width: 100%;
+    background-color: #bbbbbb;
+    overflow: auto;
+    padding: 12px;
+}
+  
+  /* Navigation links */
+.navbar2 a {
+    float: left;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    width: 14%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+}
+  
+  /* Add a background color on mouse-over */
+.navbar2 a:hover {
+    background-color: lightskyblue;
+    
+  }
+  
+  /* Style the current/active link */
+.navbar2 a.active {
+    background-color: lightskyblue;
+}
+
+img.card-img-top{
+    height:80%;
+}
+ div.card div.card-body{
+    height: 10px;
+}
+.checked {
+    color: #ff8e01;
+  }
+.discount{
+    text-decoration: line-through;
+    color: red;
+    font-size: large;
+}
+#main-footer{
+    background: #0c0c18;
+    color: #9999b1;
+}
+#main-footer img{
+    width:150px;
+}
+#main-footer a{
+    color:#9999b1;
+
+}
+#main-footer .footer-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:1.5rem;
+}
+#main-footer .footer-container>*:last-child{
+    background:#0c0c18;
+    color: white;
+    grid-column: 1/span 4;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+#main-footer .footer-container input[type='email']{
+    width:90%;
+    padding:0.5rem;
+    margin-bottom: 0.5rem;
+}
+#main-footer .footer-container input[type='submit']{
+    width:90%;
+}
+@media(max-width:600px){
+    #showcase .showcase-container,#home-article .articles-container, #main-footer .footer-container{
+        grid-template-columns: 1fr;
+    }
+    #main-footer .footer-container>*:last-child{
+        grid-column: 1;
+    }
+    #main-footer .footer-container>*{
+        border-bottom:#444 dotted 1px ;
+        padding-bottom: 1rem;
+    }
+    #main-footer .footer-container >*:last-child,#main-footer .footer-container >*:nth-child(3),#main-footer .footer-container >*:nth-child(4){
+        border:none;
+    }
+    .flex-items {
+        display:flex;
+        flex-direction: column;
+    }
+    .search-container{
+        background: url("https://worldbudgettravel.com/wp-content/uploads/2020/06/hong-kong-12.jpg")no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 90vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        animation: none;
+        
+     
+    }
+    
+
+}
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    a.navbar-brand{
+        font-size: 16px;
+    }
+    .navbar2 a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+    .flex-items {
+        display:flex;
+        flex-direction: column;
+    }
+    .search-container{
+        background: url("https://worldbudgettravel.com/wp-content/uploads/2020/06/hong-kong-12.jpg")no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 40vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        animation: none;
+        
+     
+    }
+    
+    .search-container2{
+        background: url("https://worldbudgettravel.com/wp-content/uploads/2017/11/hotel-by-the-sea.jpg")no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height:40vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .search-container3{
+    
+        background:url("https://worldbudgettravel.com/wp-content/uploads/2017/11/flight-at-sunset.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height:40vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+        
+     
+    }
+    .search-container4{
+        background:url("https://worldbudgettravel.com/wp-content/uploads/2017/11/rentalbg1.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height:50vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+        
+    }
+}
+  

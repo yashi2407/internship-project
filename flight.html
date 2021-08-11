@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Budget Travel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="" style="height: 100%; width: 250px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active ml-4">
+              <a class="nav-link " href="flight.html">FLIGHT</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="hotels.html">HOTELS</a>
+            </li>
+            <li class="nav-item ml-4">
+            <a class="nav-link" href="carrentals.html">CAR RENTALS</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="#">SHOP</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+            
+            
+          </ul>
+          
+        </div>
+    </nav>
+    
+    <div class="search-container3">
+        <div class="form-container d-none d-md-block" style="height: fit-content;">
+            <div class="content float-left" style="width: 100%;">
+                <div class="d-flex flex-column bd-highlight mb-3 float-left" style="width: 100%;">
+                    <h2  class="ml-2 text-center mt-1">Find Cheap Flights</h2>
+                    <hr>
+                    <form style="width: 100%;" class="mt-2">
+                        <div class="form-group mt-1">
+                            <div class="row m-2">
+                                <div class="col-6 d-flex flex-column">
+                                    <label for="pickup"> Origin</label>
+                                    <input type="text" id="pickup" placeholder="  enter origin" style="box-shadow: 1px 1px 5px #555 inset; height: 35px;">
+                                    
+
+                                </div>
+                                <div class="col-6 d-flex flex-column">
+                                    <label for="pickup"> Destination</label>
+                                    <input type="text" id="pickup" placeholder="  enter destination" style="box-shadow: 1px 1px 5px #555 inset; height: 35px;">
+                                    
+                                </div>
+                            </div>
+                                <div class="mt-2">
+                                    <div class="row ml-1 mr-1">
+                                        <div class="col-3 d-flex flex-column">
+                                            <label for="checkin"> DEPART DATE</label>
+                                            <input type="date" id="DEPART DATE" placeholder="" >
+                                        </div>
+                                        <div class="col-3 d-flex flex-column">
+                                            <label for="RETURN DATE"> return date</label>
+                                            <input type="date" id="RETURN DATE" placeholder="">
+                                        </div>
+                                        <div class="col-3 d-flex flex-column">
+                                            <label for="guest"> no of passengers:</label>
+                                            <input type="number" id="quantity" name="quantity" min="1" max="10"value="1">
+                                        </div>
+                                        <div class="col-3 mt-4">
+                                            <button type="submit" class="btn btn-primary p-1" style="width: 100%; ">Submit</button>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>  
+                            </div>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-2" style="margin-right: auto!important;">
+        <div class="col-12 d-md-none ml-2 mr-2 mt-4 pt-2 p-4" style="border: skyblue 1px solid; top: 0;height: fit-content; width: fit-content; ">
+            <h4 class="mt-2">BOOK YOUR TRIPS</h4>
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="row">
+                        <div class="col-6 active-icon p-2 text-center" style="background: rgba(128, 128, 128, 0.384);">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="col-6 p-2 text-center"style="background: rgba(128, 128, 128, 0.384);">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row p-1" style="box-shadow: 1px 1px 5px #555 inset;">
+                                <div class="col-4 text-center mt-1">
+                                    <label for="pickup" class="float-left" style="font-size: 11px; line-height: 1.8;color: black;"> ORIGIN</label>
+                                </div>
+                                <div class="col-8 text-center mt-2">
+                                    <input type="text" id="pickup"class="float-right" placeholder="pickup location" value="" style="width:100%">
+                                </div>
+                            </div>
+                            <div class="row mt-2" style="box-shadow: 1px 1px 5px #555 inset;">
+                                <div class="col-4 mt-1">
+                                    <label for="pickup"style="font-size: 10px; line-height: 1.8;color: black;"> DESTINATION</label>
+                                </div>
+                                <div class="col-8 text-center mt-2">
+                                    <input type="text" id="pickup" placeholder="drop-off location" value=""style="width:100%;">
+                                </div>
+                            </div>
+                            <div class="row mt-2" style="box-shadow: 1px 1px 5px #555 inset;">
+                                <div class="col-4 mt-1">
+                                    <label for="pickup"style="font-size: 10px; line-height: 1.8;color: black;"> PICK UP DATE</label>
+                                </div>
+                                <div class="col-8 text-center mt-2">
+                                    <input type="datetime-local"style="width:100%">
+                                </div>
+                            </div>
+                            <div class="row mt-2" style="box-shadow: 1px 1px 5px #555 inset;">
+                                <div class="col-4 mt-1">
+                                    <label for="pickup"style="font-size: 10px; line-height: 1.8;color: black;"> DROP-OFF DATE</label>
+                                </div>
+                                <div class="col-8 text-center mt-2">
+                                    <input type="datetime-local"style="width:100%">
+                                </div>
+                            </div>
+                            <div class="row mt-2" style="box-shadow: 1px 1px 5px #555 inset;">
+                                <div class="col-4 mt-1">
+                                    <label for="pickup"style="font-size: 10px; line-height: 1.8;color: black;">NO. OF PASSESNGERS</label>
+                                </div>
+                                <div class="col-8 text-center mt-2">
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10"value="1"style="width:100%;">
+                                </div>
+                            </div>
+                            <div class="row mt-2" >
+                                <div class="col-12 p-0" >
+                                    <button type="submit" class="btn btn-primary text-center float-right p-2" style="width: 100%; box-shadow: 1px 1px 5px darkblue inset;">Submit</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div> 
+                
+            </div>
+        </div>
+       
+    </div>
+    
+    <div class="container">
+        <h2 class="text-center mt-5" style="color: black;">Popular Flight Routes</h2>
+        <h6 class="text-center mt-1">Find incredible deals on the world’s most popular flight destinations & routes.</h6>
+        <div class="flex-items mb-3 mb-md-5">
+            <div style="margin: 10px; border: black 1px solid;">
+                <div class="row pb-3 pl-3 pr-3 pt-0">
+                    <div class="col-12 pt-2" style="background: skyblue; color: white;">
+                        Special offers from London Stansted
+                    </div>
+                    <div class="col-12 d-flex justify-content-around">
+                        <img src="http://pics.avs.io/122/56/FR@2x.png" style="width: 45%;" alt="">
+                        <div class=".flex-column" style="line-height: .4;">
+                            <p class="mt-2">FROM $18</p>
+                            <i class="far fa-clock">5 days left</i>
+                        </div>
+                        
+
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>Special offers from London Stansted. Special offers from London to Jerez De La Frontera</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button style="background: #ff8e01; color: white;" class="p-2">Show Details</button>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div style="margin: 10px; border: black 1px solid;">
+                <div class="row pb-3 pl-3 pr-3 pt-0">
+                    <div class="col-12 pt-2" style="background: skyblue; color: white;">
+                        Special offers from London Gatwick
+                    </div>
+                    <div class="col-12 d-flex justify-content-around">
+                        <img src="http://pics.avs.io/122/56/FR@2x.png" style="width: 45%;" alt="">
+                        <div class=".flex-column" style="line-height: .4;">
+                            <p class="mt-2">FROM $18</p>
+                            <i class="far fa-clock">5 days left</i>
+                        </div>
+
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>5 days leftSpecial offers from London Gatwick. Special offers from London to Alicante</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button style="background: #ff8e01; color: white;"class="p-2">Show Details</button>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div style="margin: 10px; border: black 1px solid;">
+                <div class="row pb-3 pl-3 pr-3 pt-0">
+                    <div class="col-12 pt-2" style="background: skyblue; color: white;">
+                        Special offers from London Gatwick
+                    </div>
+                    <div class="col-12 d-flex justify-content-around">
+                        <img src="http://pics.avs.io/122/56/FR@2x.png" style="width: 45%;" alt="">
+                        <div class=".flex-column" style="line-height: .4;">
+                            <p class="mt-2">FROM $18</p>
+                            <i class="far fa-clock">5 days left</i>
+                        </div>
+
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>5 days leftSpecial offers from London Gatwick. Special offers from London to Alicante</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button style="background: #ff8e01; color: white;"class="p-2">Show Details</button>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div style="margin: 10px;border: black solid 1px;">
+                <div class="row pb-3 pl-3 pr-3 pt-0">
+                    <div class="col-12 pt-2" style="background: skyblue; color: white;">
+                        Special offers from London Stansted
+                    </div>
+                    <div class="col-12 d-flex justify-content-around">
+                        <img src="http://pics.avs.io/122/56/FR@2x.png" style="width: 45%;" alt="">
+                        <div class=".flex-column" style="line-height: .4;">
+                            <p class="mt-2">FROM $18</p>
+                            <i class="far fa-clock">5 days left</i>
+                        </div>
+
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>Special offers from London Stansted. Special offers from London to Jerez De La Frontera</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button style="background: #ff8e01; color: white;"class="p-2">Show Details</button>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="flex-items mb-3 mb-md-5">
+            <div style="margin: 10px; border: black 1px solid;">
+                <div class="row pb-3 pl-3 pr-3 pt-0">
+                    <div class="col-12 pt-3" style="background: rgb(0, 12, 17); color: white;">
+                        Special offer from Portland to San Jose
+                    </div>
+                    <div class="col-12 d-flex justify-content-around">
+                        <img src="//pics.avs.io/122/56/AS@2x.png" style="width: 45%;" alt="">
+                        <div class=".flex-column" style="line-height: .4;">
+                            <p class="mt-2">FROM $18</p>
+                            <i class="far fa-clock">5 days left</i>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>Special offer from Portland to San Jose. Special offers from Portland to San Jose</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button style="background: #ff8e01; color: white;"class="p-2">Show Details</button>
+    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div style="margin: 10px;border: black solid 1px;">
+                <div class="row pb-3 pl-3 pr-3 pt-0">
+                    <div class="col-12 pt-3" style="background: skyblue; color: white;">
+                        Special offers from London Stansted
+                    </div>
+                    <div class="col-12 d-flex justify-content-around">
+                        <img src="http://pics.avs.io/122/56/FR@2x.png" style="width: 45%;" alt="">
+                        <div class=".flex-column" style="line-height: .4;">
+                            <p class="mt-2">FROM $18</p>
+                            <i class="far fa-clock">5 days left</i>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>Special offers from London Stansted. Special offers from London to Jerez De La Frontera</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button style="background: #ff8e01; color: white;"class="p-2">Show Details</button>
+    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div style="margin: 10px;border: black solid 1px;">
+                <div class="row pb-3 pl-3 pr-3 pt-0">
+                    <div class="col-12 pt-3" style="background: skyblue; color: white;">
+                        Special offers from London Stansted
+                    </div>
+                    <div class="col-12 d-flex justify-content-around">
+                        <img src="http://pics.avs.io/122/56/FR@2x.png" style="width: 45%;" alt="">
+                        <div class=".flex-column" style="line-height: .4;">
+                            <p class="mt-2">FROM $18</p>
+                            <i class="far fa-clock">5 days left</i>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>Special offers from London Stansted. Special offers from London to Jerez De La Frontera</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button style="background: #ff8e01; color: white;"class="p-2">Show Details</button>
+    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+    <footer id="main-footer" class="py-2">
+        <div class="container footer-container mt-md-4">
+            <div>
+                <h4 style="color: white;">ABOUT US</h4>
+                <p>We are one of the leading travel search engines and we enable our users to compare millions of flights and hotels to find the best deal.</p>
+                <p><i class="fas fa-phone"></i> 85255896593</p>
+                <p><i class="far fa-envelope"></i><br>contact@worldbudgettravel.com</p>
+                <a href="http://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="http://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="http://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="http://youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <div>
+                <h3>RECENT POSTS</h3>
+                <ul class="lists">
+                    <li><a href="#">3 Stars Hotel In Rome</a></li>
+                    <li><a href="#">Your Vacation First Aid Kit</a></li>
+                    <li><a href="#">Why Choose First Class Travel?</a></li>
+                    <li><a href="#">Three Places You Must Visit In Your Life</a></li>
+                    <li><a href="#">top travel tips-russia</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>QUICK Links</h3>
+                <ul class="lists">
+                    <li><a href="#">search hotels</a></li>
+                    <li><a href="#">Search flights</a></li>
+                    <li><a href="#" >Search cars</a></li>
+                    <li><a href="#">Travel BLOG</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>DOWNLOAD OUR APP</h4>
+            </div>
+            <div class="d-none d-md-block">
+                <img src="https://worldbudgettravel.com/wp-content/themes/viptravel/images/brands.png" alt="" style="width: 80%;">
+            </div>
+            
+    </footer>
+    <div class="row" style="width: 100%; padding: 24px 0 27px;background-color: #1c1c34;margin: 0;">
+        <div class="col-12">
+            <div class="container text-center" style="color: white;">
+                <p>Copyrights 2020. World Budget Travel All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Budget Travel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/Content/bootstrap-datetimepicker.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="" style="height: 100%; width: 250px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active ml-4">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="flight.html">FLIGHT</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="hotels.html">HOTELS</a>
+            </li>
+            <li class="nav-item ml-4">
+            <a class="nav-link" href="carrentals.html">CAR RENTALS</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="#">SHOP</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+           
+            
+          </ul>
+          
+        </div>
+    </nav>
+    <div class="search-container">
+        <div class="form-container height: fit-content d-none d-md-block">
+            <div class="container" style="background: rgba(169, 169, 169, 0.678); height: fit-content;">
+                <ul class="d-flex justify-content-start p-2">
+                    <li class="nav-item sub-nav mr-5 ml-3">
+                      <a class="nav-link" href="hotels.html">HOTELS <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item sub-nav mr-5">
+                        <a class="nav-link" href="flight.html">FLIGHTS <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item sub-nav mr-5">
+                        <a class="nav-link" href="carrentals.html">CAR RENTALS <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>    
+                
+            </div>
+            <div class="form-container d-none d-md-block" style="height: fit-content; width: 100%;">
+             <div class="content float-left" style="width: 100%;">
+                    <div class="d-flex flex-column bd-highlight mb-3 float-left" style="width: 100%;">
+                        <h2 style="text-align: left;" class="ml-2">Find your Cheap hotels</h2>
+                        
+                        <form style="width: 100%;" class="mt-2">
+                            <div class="form-group mt-1">
+                                
+                                <label for="city of hotel name" class="float-left ml-2">city of hotel name</label>
+                                <div class="input-container">
+                                    <i class="fa fa-hotel fa-2x icon"></i>
+                                    <input class="input-field" type="text" placeholder=" Enter hotel name" name="name">
+                                </div>
+                                <label for="checkin"> check-in</label>
+                                <input type="date" id="checkin" placeholder="check-in" value="check-in">
+                                <label for="checkout"> check-out</label>
+                                <input type="date" id="checkout" placeholder="check-out">
+                                <label for="guest"> no of guests:</label>
+                                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                
+
+        </div>
+
+    </div>
+    <div class="container mt-3 mb-3 d-md-none p-4" style="border: skyblue 1px solid;">
+        <div class="row d-md-none">
+           
+            <div class="col-12">
+                <div class="container">
+                    <ul class="d-flex justify-content-start">
+                        <li class="nav-item sub-nav mr-5 ml-2">
+                          <a class="nav-link" href="#">HOTELS <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item sub-nav mr-5">
+                            <a class="nav-link" href="#">FLIGHTS <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item sub-nav mr-5">
+                            <a class="nav-link" href="#">CAR RENTALS <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>    
+                    
+                </div>
+                <div class="row">
+                    <div class="col-12 ">
+                        <p>Find your next hotel deal</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row p-1" style="box-shadow: 1px 1px 5px #555 inset;">
+                                    <div class="col-4 text-center mt-1">
+                                        <label for="hotel name" class="float-left"style="font-size: 10px; line-height: 1.8;color: black;">hotel name</label>
+                                    </div>
+                                </div>
+                                <div class="row mt-2" style="box-shadow: 1px 1px 5px #555 inset;">
+                                    <div class="col-4 mt-1">
+                                        <label for="checkin"style="font-size: 10px; line-height: 1.8;color: black;"> check-in</label>
+                                    </div>
+                                    <div class="col-8 text-center mt-2">
+                                        <input type="date"style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="row mt-2" style="box-shadow: 1px 1px 5px #555 inset;">
+                                    <div class="col-4 mt-1">
+                                        <label for="checkout"style="font-size: 10px; line-height: 1.8;color: black;"> check-out</label>
+                                    </div>
+                                    <div class="col-8 text-center mt-2">
+                                        <input type="date"style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="row p-1" style="box-shadow: 1px 1px 5px #555 inset;">
+                                    <div class="col-4 text-center mt-1 ">
+                                        <label for="no. of guests" class="float-left"style="font-size: 12px; line-height: 1.8;color: black;"> No.of guests</label>
+                                    </div>
+                                    <div class="col-8 text-center mt-2">
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10" style="width: 100%;">
+                                    </div>
+                                        
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0" >
+                                        <button type="submit" class="btn btn-primary text-center float-right" style="width: 100%; box-shadow: 1px 1px 5px darkblue inset;">Submit</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                    </div> 
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="heading text-center mt-5">
+                <h2>TOP DESTINATIONS</h2>
+            </div>
+            <div class="navbar2 mt-3 mb-3">
+                <a class="" style="background: skyblue;"" href="#">WORLDWIDE</a>
+                <a href="#">USA&CANADA</a>
+                <a href="#">CARIBBEAN</a>
+                <a href="#">SOUTH AMERICA</a>
+                <a href="#">EUROPE</a>
+                <a href="#">ASIA PACIFIC</a>
+                <a href="#">AFRICA</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card" style="width: 18rem; height:17rem">
+                        <img src="https://images.unsplash.com/photo-1569921867120-73173f1a25fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body mb-3">
+                          <p class="card-text">LONDON <span class="float-right" style="color: red;">9,473 hotels</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card" style="width: 18rem;height:17rem">
+                        <img src="https://images.unsplash.com/photo-1518599807935-37015b9cefcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body mb-3">
+                          <p class="card-text">HONGKONG <span class="float-right" style="color: red;">1,982 hotels</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card" style="width: 18rem;height:17rem">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body mb-3">
+                          <p class="card-text">PARIS <span class="float-right" style="color: red;">7,790 hotels</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card" style="width: 18rem;height:17rem">
+                        <img src="https://images.unsplash.com/photo-1514940403093-cccd37db1528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body mb-3">
+                          <p class="card-text">DUBAI <span class="float-right" style="color: red;">2,149 hotels</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card" style="width: 18rem;height:17rem">
+                        <img src="https://images.unsplash.com/photo-1546726747-421c6d69c929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body mb-3">
+                          <p class="card-text">BERLIN<span class="float-right" style="color: red;">2,451 hotels</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card" style="width: 18rem;height:17rem">
+                        <img src="https://worldbudgettravel.com/wp-content/uploads/2017/10/NY.jpg" \class="card-img-top" alt="...">
+                        <div class="card-body mb-3">
+                          <p class="card-text">NEW YORK <span class="float-right" style="color: red;">2,864 hotels</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                  
+
+        </div>
+    </div>
+        
+
+    </div>
+    <section class="featured-hotels mt-5">
+        <div class="container" style="border: 1px solid black;">
+            <div class="heading text-center mt-5">
+                <h2>FEATURED HOTELS</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center m-0 p-0">
+                    <div class="fluid-container" style="width: 100%;">
+                        <div style="background:rgb(224, 224, 224);color:black;margin: 0; width: 100%;" class="p-1 mt-1">
+                            <p style="height: 100%; margin: 0;"><span style="width: fit-content; height:100%;background-color: #06af61; color: white;" class="p-2 mt-3">5 STARS</span>  popular</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  mt-4 ml-2">
+                    <div class="row">
+                        <div class="col-6 col-md-3 p-5 " style="background: url(https://images.unsplash.com/photo-1524234599372-a5bd0194758d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)no-repeat center center ;background-size: cover; height:130px">
+                            </div>
+                        <div class="col-6 d-flex flex-column bd-highlight mb-3">
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span><br>
+                            </div>
+                            <a class="text-green mt-3" href="#">ANANTARA MAI KHAO PHUKET VILLAS</a>
+                            <i class="fas fa-search-location mb-2" style="color: darkgray;">30.44 km away from city</i>
+                            <div class="d-flex justify-content-start">
+                                <p class="green p-1 text-center">9.3 </p>
+                                <span class="text-green ml-1">  guest rating</span>
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="text-center">
+                                <div class="price" style="line-height: 1.3px;">
+                                    <div class="sm-text " style="font-size: 14px;">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <p class=" mb-2">Price per night</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start mb-2 mt-2" style="margin-left:110px ;">
+                                                    <p style="font-size: 16px;color: #fa4646;"class="pb-2 pt-2 mt-2" >$417</p>
+                                                    <p class="pb-2 pt-2 mt-2" style="background: #fa4646; color: white; width: fit-content; ">-43% </p>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <p style="color: black; font-weight: 500; font-size: 25px;" class=" text-center">$239</p>
+                                            <button class="btn_orange p-3">View</button>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-12  mt-4 ml-2">
+                    <div class="row">
+                        <div class="col-6 col-md-3 p-5 " style="background: url(https://images.unsplash.com/photo-1543321269-9d86d3680e1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)no-repeat center center ;background-size: cover; height:130px">
+                            </div>
+                        <div class="col-6 d-flex flex-column bd-highlight mb-3">
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span><br>
+                            </div>
+                            <a class="text-green mt-3" href="#">ANANTARA MAI KHAO PHUKET VILLAS</a>
+                            <i class="fas fa-search-location mb-2" style="color: darkgray;">30.44 km away from city</i>
+                            <div class="d-flex justify-content-start">
+                                <p class="green p-1 text-center">9.3 </p>
+                                <span class="text-green ml-1">  guest rating</span>
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="text-center">
+                                <div class="price" style="line-height: 1.3px;">
+                                    <div class="sm-text " style="font-size: 14px;">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <p class=" mb-2">Price per night</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start mb-2 mt-2" style="margin-left:110px ;">
+                                                    <p style="font-size: 16px;color: #fa4646;"class="pb-2 pt-2 mt-2" >$417</p>
+                                                    <p class="pb-2 pt-2 mt-2" style="background: #fa4646; color: white; width: fit-content; ">-43% </p>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <p style="color: black; font-weight: 500; font-size: 25px;" class=" text-center">$239</p>
+                                            <button class="btn_orange p-3">View</button>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-12  mt-4 ml-2">
+                    <div class="row">
+                        <div class="col-6 col-md-3 p-5 " style="background: url(https://images.unsplash.com/photo-1580835845971-a393b73bf370?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)no-repeat center center ;background-size: cover; height:130px">
+                            </div>
+                        <div class="col-6 d-flex flex-column bd-highlight mb-3">
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span><br>
+                            </div>
+                            <a class="text-green mt-3" href="#">ANANTARA MAI KHAO PHUKET VILLAS</a>
+                            <i class="fas fa-search-location mb-2" style="color: darkgray;">30.44 km away from city</i>
+                            <div class="d-flex justify-content-start">
+                                <p class="green p-1 text-center">9.3 </p>
+                                <span class="text-green ml-1">  guest rating</span>
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="text-center">
+                                <div class="price" style="line-height: 1.3px;">
+                                    <div class="sm-text " style="font-size: 14px;">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <p class=" mb-2">Price per night</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start mb-2 mt-2" style="margin-left:110px ;">
+                                                    <p style="font-size: 16px;color: #fa4646;"class="pb-2 pt-2 mt-2" >$417</p>
+                                                    <p class="pb-2 pt-2 mt-2" style="background: #fa4646; color: white; width: fit-content; ">-43% </p>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <p style="color: black; font-weight: 500; font-size: 25px;" class=" text-center">$239</p>
+                                            <button class="btn_orange p-3">View</button>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-12  mt-4 ml-2">
+                    <div class="row">
+                        <div class="col-6 col-md-3 p-5 " style="background: url(https://images.unsplash.com/photo-1590447158019-883d8d5f8bc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)no-repeat center center ;background-size: cover; height:130px">
+                            </div>
+                        <div class="col-6 d-flex flex-column bd-highlight mb-3">
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span><br>
+                            </div>
+                            <a class="text-green mt-3" href="#">ANANTARA MAI KHAO PHUKET VILLAS</a>
+                            <i class="fas fa-search-location mb-2" style="color: darkgray;">30.44 km away from city</i>
+                            
+                            <div class="d-flex justify-content-start">
+                                <p class="green p-1 text-center">9.3 </p>
+                                <span class="text-green ml-1">  guest rating</span>
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="text-center">
+                                <div class="price" style="line-height: 1.3px;">
+                                    <div class="sm-text " style="font-size: 14px;">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <p class=" mb-2">Price per night</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start mb-2 mt-2" style="margin-left:110px ;">
+                                                    <p style="font-size: 16px;color: #fa4646;"class="pb-2 pt-2 mt-2" >$417</p>
+                                                    <p class="pb-2 pt-2 mt-2" style="background: #fa4646; color: white; width: fit-content; ">-43% </p>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <p style="color: black; font-weight: 500; font-size: 25px;" class=" text-center">$239</p>
+                                            <button class="btn_orange p-3">View</button>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-12  mt-4 ml-2">
+                    <div class="row">
+                        <div class="col-6 col-md-3 p-5 " style="background: url(https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)no-repeat center center ;background-size: cover; height:130px">
+                            </div>
+                        <div class="col-6 d-flex flex-column bd-highlight mb-3">
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span><br>
+                            </div>
+                            <a class="text-green mt-3" href="#">ANANTARA MAI KHAO PHUKET VILLAS</a>
+                            <i class="fas fa-search-location mb-2" style="color: darkgray;">30.44 km away from city</i>
+                            <div class="d-flex justify-content-start">
+                                <p class="green p-1 text-center">9.3 </p>
+                                <span class="text-green ml-1">  guest rating</span>
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="text-center">
+                                <div class="price" style="line-height: 1.3px;">
+                                    <div class="sm-text " style="font-size: 14px;">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <p class=" mb-2">Price per night</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start mb-2 mt-2" style="margin-left:110px ;">
+                                                    <p style="font-size: 16px;color: #fa4646;"class="pb-2 pt-2 mt-2" >$417</p>
+                                                    <p class="pb-2 pt-2 mt-2" style="background: #fa4646; color: white; width: fit-content; ">-43% </p>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <p style="color: black; font-weight: 500; font-size: 25px;" class=" text-center">$239</p>
+                                            <button class="btn_orange p-3">View</button>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="blogs mt-5">
+        <div class="container">
+            <h2 class="text-center mt-5"> OUR LATEST BLOGS</h2>
+            <div class="flex-items">
+                <div style="margin: 10px; border: lightgray 1px solid;" class="p-3">
+                    <h5 class="mt-2">
+                        <a href="#" style="color: black;">3 start hotel in rome</a>
+                    </h5>
+                    <div class="d-flex justify-content-between mt-4">
+                        <i class="far fa-calendar-alt"> JUNE 22,2020</i>
+                        <i class="far fa-user">SuperAdmin</i>
+                    </div>
+                    <div class="mt-4">
+                        Rome is a reality. For Rome, more than for most cities, 
+                        this always has been the central dilemma of city life: 
+                        how to maintain its priceless heritage while improving 
+                        a lot of its cheerful inhabitants....
+                    </div>
+                    <a href="#" style="color: #ff8e01;" class="float-right mt-4">Read more</a>
+                </div>
+                <div style="margin: 10px; border: lightgray 1px solid;" class="p-3">
+                    <h5 class="mt-2">
+                        <a href="#" style="color: black;">3 start hotel in rome</a>
+                    </h5>
+                    <div class="d-flex justify-content-between mt-4">
+                        <i class="far fa-calendar-alt"> JUNE 22,2020</i>
+                        <i class="far fa-user">SuperAdmin</i>
+                    </div>
+                    <div class="mt-4">
+                        Rome is a reality. For Rome, more than for most cities, 
+                        this always has been the central dilemma of city life: 
+                        how to maintain its priceless heritage while improving 
+                        a lot of its cheerful inhabitants....
+                    </div>
+                    <a href="#" style="color: #ff8e01;" class="float-right mt-4">Read more</a>
+                </div>
+                <div style="margin: 10px; border: lightgray 1px solid;" class="p-3">
+                    <h5 class="mt-2">
+                        <a href="#" style="color: black;">3 start hotel in rome</a>
+                    </h5>
+                    <div class="d-flex justify-content-between mt-4">
+                        <i class="far fa-calendar-alt"> JUNE 22,2020</i>
+                        <i class="far fa-user">SuperAdmin</i>
+                    </div>
+                    <div class="mt-4">
+                        Rome is a reality. For Rome, more than for most cities, 
+                        this always has been the central dilemma of city life: 
+                        how to maintain its priceless heritage while improving 
+                        a lot of its cheerful inhabitants....
+                    </div>
+                    <a href="#" style="color: #ff8e01;" class="float-right mt-4">Read more</a>
+                </div>
+                
+            </div>
+
+        </div>
+    
+        
+
+        
+    </section>
+    <section class="mt-2 mt-md-5" style="width: 100%;padding: 34px 0 37px;background-color: #1c1c34">
+        <div class="row  mt-2 mt-md-5 ">
+            <div class="container d-flex justify-content-around">
+                <div class="col-md-6">
+                    <strong style="color: white;">SIGNUP FOR EXCLUSIVE TRAVEL DEALS
+                    </strong>
+                    <p style="color: white;">Subscribe to our mailing list and we'll send you incredible travel deals.</p>
+    
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1" style="color: white;">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          
+                        </div>
+                      </form>
+    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer id="main-footer" class="py-2">
+        <div class="container footer-container mt-md-4">
+            <div>
+                <h4 style="color: white;">ABOUT US</h4>
+                <p>We are one of the leading travel search engines and we enable our users to compare millions of flights and hotels to find the best deal.</p>
+                <p><i class="fas fa-phone"></i> 85255896593</p>
+                <p><i class="far fa-envelope"></i><br>contact@worldbudgettravel.com</p>
+                <a href="http://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="http://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="http://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="http://youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <div>
+                <h3>RECENT POSTS</h3>
+                <ul class="lists">
+                    <li><a href="#">3 Stars Hotel In Rome</a></li>
+                    <li><a href="#">Your Vacation First Aid Kit</a></li>
+                    <li><a href="#">Why Choose First Class Travel?</a></li>
+                    <li><a href="#">Three Places You Must Visit In Your Life</a></li>
+                    <li><a href="#">top travel tips-russia</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>QUICK Links</h3>
+                <ul class="lists">
+                    <li><a href="#">search hotels</a></li>
+                    <li><a href="#">Search flights</a></li>
+                    <li><a href="#" >Search cars</a></li>
+                    <li><a href="#">Travel BLOG</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>DOWNLOAD OUR APP</h4>
+            </div>
+            <div class="d-none d-md-block">
+                <img src="https://worldbudgettravel.com/wp-content/themes/viptravel/images/brands.png" alt="" style="width: 80%;">
+            </div>
+            
+    </footer>
+    <div class="row" style="width: 100%; padding: 24px 0 27px;background-color: #1c1c34;margin: 0;">
+        <div class="col-12">
+            <div class="container text-center" style="color: white;">
+                <p>Copyrights 2020. World Budget Travel All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
